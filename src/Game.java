@@ -172,12 +172,12 @@ class ExamplesMyWorldProgram {
     return t
         .checkExpect(this.game3.addInfoToScene(this.scene), this.scene.placeImageXY(
             new TextImage("  Current tick: " + Integer.toString(this.game3.currentTick)
-                + "    Bullets shot: " + Integer.toString(this.game3.bulletCount)
+                + "    Bullets left: " + Integer.toString(10 - this.game3.bulletCount)
                 + "    Total score:  " + Integer.toString(this.game3.totalScore), Color.black),
             150, 20))
         && t.checkExpect(this.game5.addInfoToScene(this.scene), this.scene.placeImageXY(
             new TextImage("  Current tick: " + Integer.toString(this.game5.currentTick)
-                + "    Bullets shot: " + Integer.toString(this.game5.bulletCount)
+                + "    Bullets left: " + Integer.toString(10- this.game5.bulletCount)
                 + "    Total score:  " + Integer.toString(this.game5.totalScore), Color.black),
             150, 20));
 
